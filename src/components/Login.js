@@ -7,10 +7,8 @@ export default function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setUser((prevUser) => ({ ...prevUser, username, password }));
-    setUsername('');
-    setPassword('');
-    console.log(user);
+    const newUser = { username, password };
+    console.log(newUser);
   };
 
   return (
@@ -28,7 +26,7 @@ export default function Login() {
           id='password'
           type='text'
           value={password}
-          onChange={(event) => setPassword(() => event.target.value)}
+          onChange={(event) => setPassword(event.target.value)}
         />
         <button
           style={{
