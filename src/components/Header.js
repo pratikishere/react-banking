@@ -10,9 +10,9 @@ export default function Header() {
     <div className='header'>
       <img
         style={{
-          height: '9%',
-          width: '9%',
-          float: 'left',
+          height: '15%',
+          width: '13%',
+          float: 'left'
         }}
         src={Logo}
         alt='Logo'
