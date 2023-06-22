@@ -2,3 +2,19 @@
   margin-top: 20px;
   display: flex;
 }
+
+.expenses {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+}
+
+.expenses:hover,
+a:active {
+  background-color: red;
+}

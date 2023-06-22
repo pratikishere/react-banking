@@ -21,7 +21,11 @@ export default function Login() {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <form style={{ marginTop: '5%' }} onSubmit={handleSubmit}>
+      <p>
+        Please Login. You need to login to access this page. Please enter your
+        username and password and click Submit.
+      </p>
+      <form style={{ marginTop: '2%' }} onSubmit={handleSubmit}>
         <label htmlFor='username'>Username</label>
         <input
           id='username'

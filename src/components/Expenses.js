@@ -1,44 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Cards from './Cards';
-import './products.css';
+import './expenses.css';
 
-export default function Products() {
+export default function Expenses() {
   const keyProducts = [
     {
-      name: 'Tax',
+      name: 'expses1',
       description:
         'Our Tax-Saving Fixed Deposit gives you the dual benefit of tax exemption u/s 80c of the Income Tax Act and higher interest rates on your deposits.',
     },
     {
-      name: 'Loan',
+      name: 'exp2',
       description:
         'Get hassle-free instant personal loans online. Apply now to experience quick approval, low interest rates, and flexible repayment options',
     },
-    { name: 'Debit Card', description: 'Apply our debit card online' },
+    { name: 'exp5', description: 'Apply our debit card online' },
     {
-      name: 'Saving Account',
+      name: 'exp3',
       description:
         'We offers you a range of savings account that suits your personal needs for banking. Open your savings account online in India now',
     },
-    { name: 'Mobile Banking', description: 'Apply for mobile banking' },
+    { name: 'exp4', description: 'Apply for mobile banking' },
   ];
 
   return (
     <>
-      <div className='products'>
+      <div className='expensesPage'>
         {keyProducts.map((product) => (
           <Cards
             header={product.name}
             text1={product.description}
-            page={false}
+            page={true}
           />
         ))}
-      </div>
-      <div className='expenses'>
-        <Link style={{ textDecoration: 'none', color: 'white' }} to='/expenses'>
-          To Expenses
-        </Link>
       </div>
     </>
   );

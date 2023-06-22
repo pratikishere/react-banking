@@ -5,9 +5,17 @@
   border: 1px red solid;
   margin: 10px;
 }
+
 .header1 {
   height: 30%;
   background: lightsalmon;
+  color: black;
+  text-align: center;
+}
+
+.header2 {
+  height: 30%;
+  background: lightgreen;
   color: black;
   text-align: center;
 }
