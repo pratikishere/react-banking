@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const expensetrans = [
   {
@@ -134,6 +135,18 @@ export default function ExpenseDetails() {
             </tbody>
           </>
         </table>
+      </div>
+      <div
+        className='expenses'
+        style={{
+          margin: '10px',
+          position: 'absolute',
+          left: '47%',
+        }}
+      >
+        <Link style={{ textDecoration: 'none', color: 'white' }} to='/expenses'>
+          To Expenses
+        </Link>
       </div>
     </div>
   );
