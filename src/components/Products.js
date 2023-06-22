@@ -29,6 +29,7 @@ export default function Products() {
       <div className='products'>
         {keyProducts.map((product) => (
           <Cards
+            handleClick = {() => {}}
             header={product.name}
             text1={product.description}
             page={false}
