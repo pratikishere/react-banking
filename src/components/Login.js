@@ -22,24 +22,27 @@ export default function Login() {
   return (
     <div style={{ textAlign: 'center' }}>
       <p>
-        Please Login. You need to login to access this page. Please enter your
-        username and password and click Submit.
+        Welcome to HSBC premier league. Please enter your username and password and click Submit.
       </p>
       <form style={{ marginTop: '2%' }} onSubmit={handleSubmit}>
-        <label htmlFor='username'>Username</label>
-        <input
-          id='username'
-          type='text'
-          onChange={(event) => setUsername(event.target.value)}
-          value={username}
-        />
-        <label htmlFor='username'>Password</label>
-        <input
-          id='password'
-          type='text'
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-        />
+        <div style={{ margin: "10px" }}>
+          <label htmlFor='username' style={{ width: '90px', paddingLeft: '20px', display: 'inline-block'}} >Username</label>
+          <input
+            id='username'
+            type='text'
+            onChange={(event) => setUsername(event.target.value)}
+            value={username}
+          />
+        </div>
+        <div>
+          <label htmlFor='username' style={{ width: '90px', paddingLeft: '20px', display: 'inline-block'}}>Password</label>
+          <input
+            id='password'
+            type='text'
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+          />
+        </div>
         <button
           style={{
             display: 'block',
