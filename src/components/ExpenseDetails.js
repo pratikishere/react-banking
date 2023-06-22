@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 
 const expensetrans = [
   {
-    name: 'groceries',
+    name: 'Groceries',
     price: 500,
-    type: 'debit',
+    type: 'Debit',
     date: '22-06-2023',
   },
   {
-    name: 'medical',
+    name: 'Medical',
     price: 10000,
-    type: 'debit',
+    type: 'Debit',
     date: '15-06-2023',
   },
   {
-    name: 'mobile recharge',
+    name: 'Mobile recharge',
     price: 2000,
-    type: 'debit',
+    type: 'Debit',
     date: '10-05-2023',
   },
   {
-    name: 'mobile recharge',
+    name: 'Mobile recharge',
     price: 500,
-    type: 'debit',
-    date: '08-04-2023',
+    type: 'Debit',
+    date: '24-04-2023',
   },
   {
-    name: 'electricity bill',
+    name: 'Electricity bill',
     price: 5000,
-    type: 'debit',
-    date: '25-05-2023',
+    type: 'Debit',
+    date: '30-04-2023',
   },
 ];
 
@@ -81,7 +81,7 @@ export default function ExpenseDetails() {
                     background: 'lightgray',
                   }}
                 >
-                  Price
+                  Amount
                 </td>
                 <td
                   style={{
@@ -141,11 +141,11 @@ export default function ExpenseDetails() {
         style={{
           margin: '10px',
           position: 'absolute',
-          left: '47%',
+          left: '44%',
         }}
       >
         <Link style={{ textDecoration: 'none', color: 'white' }} to='/expenses'>
-          To Expenses
+        To spend analysis
         </Link>
       </div>
     </div>

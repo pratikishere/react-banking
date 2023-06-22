@@ -3,35 +3,29 @@ import { Link } from 'react-router-dom';
 
 const expensetrans = [
   {
-    name: 'groceries',
-    price: 500,
-    type: 'debit',
-    date: '22-06-2023',
-  },
-  {
-    name: 'medical',
-    price: 10000,
-    type: 'debit',
-    date: '15-06-2023',
-  },
-  {
-    name: 'mobile recharge',
-    price: 2000,
-    type: 'debit',
-    date: '10-05-2023',
-  },
-  {
-    name: 'mobile recharge',
-    price: 500,
-    type: 'debit',
-    date: '08-04-2023',
-  },
-  {
-    name: 'electricity bill',
+    name: 'FD matured',
     price: 5000,
-    type: 'debit',
-    date: '25-05-2023',
+    type: 'Credit',
+    date: '18-04-2023',
   },
+  {
+    name: 'Tata India SIP',
+    price: 1000,
+    type: 'Debit',
+    date: '19-06-2023',
+  },
+  {
+    name: 'Tata India SIP',
+    price: 1000,
+    type: 'Debit',
+    date: '19-05-2023',
+  },
+  {
+    name: 'Tata India SIP',
+    price: 1000,
+    type: 'Debit',
+    date: '19-04-2023',
+  }
 ];
 
 export default function ExpenseDetails() {
@@ -50,7 +44,7 @@ export default function ExpenseDetails() {
           alignItems: 'center',
         }}
       >
-        <h1>Expenses Details</h1>
+        <h1>Invesment Details</h1>
 
         <label for='cars'>Select months:</label>
 
@@ -81,7 +75,7 @@ export default function ExpenseDetails() {
                     background: 'lightgray',
                   }}
                 >
-                  Price
+                  Amount
                 </td>
                 <td
                   style={{
@@ -141,11 +135,11 @@ export default function ExpenseDetails() {
         style={{
           margin: '10px',
           position: 'absolute',
-          left: '47%',
+          left: '44%',
         }}
       >
         <Link style={{ textDecoration: 'none', color: 'white' }} to='/expenses'>
-          To Expenses
+          To spend analysis
         </Link>
       </div>
     </div>
