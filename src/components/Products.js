@@ -35,9 +35,9 @@ export default function Products() {
           />
         ))}
       </div>
-      <div className='expenses'>
+      <div className='expenses'  style={{ display: 'inline-block', position: 'absolute', left: '44%'}}>
         <Link style={{ textDecoration: 'none', color: 'white' }} to='/expenses'>
-          To Expenses
+          Spend Analysis
         </Link>
       </div>
     </>
